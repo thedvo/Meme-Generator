@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Kanit:wght@700&family=Montserrat&family=PT+Sans&family=Prompt:wght@600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="memeGenerator.css">
+</head>
+<body>
+    <h1>Meme Generator</h1>
+    <p>Generate a meme by inputting your desired text and image.</p>
+
+<form id="formContainer">
+        <label for="top-text">
+        <input type="text" name='toptext' class="inputs" id="top-text" placeholder="(Optional) Top text">
+        </label>
+  
+        <label for="bottom-text">
+        <input type="text" name='bottomtext' class="inputs" id="bottom-text" placeholder="(Optional) Bottom text">
+        </label>
+
+        <label for="link">
+        <input type="url" name='imgURL' class="inputs" id="link" placeholder="Image URL" required>
+        </label>
+
+        <input type="submit">
+
+        <p class="instructions">To delete, double click the meme.</p>
+        <p class="instructions">To save, screenshot the meme. </p>
+
+</form>
+
+    <section id="results"></section>
+ 
+    <script src="memeGenerator.js"></script>
+</body>
+</html>

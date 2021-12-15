@@ -1,0 +1,120 @@
+.body {
+  background-color: burlywood;
+}
+
+h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: 50px;
+  position: relative;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.inputs {
+  display: block;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 400px;
+  height: 25px;
+}
+
+input[type="url"] {
+  width: 400px;
+  height: 25px;
+}
+
+.instructions {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin-top: 15px;
+  margin-bottom: -5px;
+}
+
+.meme {
+  position: relative;
+  margin: auto;
+  width: 450px;
+  height: 300px;
+  background-size: 100%;
+  text-align: center;
+}
+
+#img {
+  margin: auto;
+  width: 450px;
+  height: 300px;
+  background-size: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.memeText {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 15px 0px;
+  padding: 0 5px;
+  font-family: impact;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
+    -2px 0px 0 #000, 2px 2px 5px #000;
+}
+/*Sourced from https://codepen.io/MetalEscape/pen/WrYxVM  */
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+
+.meme:hover .overlay {
+  transform: scale(1);
+  cursor: pointer;
+}
+
+/* .removeText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
